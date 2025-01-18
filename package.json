@@ -6,10 +6,12 @@
     "dev": "npm run open-browser && next dev --turbopack",
     "open-browser": "start http://localhost:3000",
     "build": "next build",
+    "export": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.9.3",
     "axios": "^1.7.9",
     "next": "15.1.4",
     "react": "^19.0.0",
