@@ -5,8 +5,8 @@ import '../../styles/App.css'; // CSS 파일 경로
 const Schedule: React.FC = () => {
   const [date, setDate] = useState<Date>(new Date());
   const [events, setEvents] = useState<{ [key: string]: { title: string }[] }>({
-    '2025-03-15': [{ title: 'Event 1' }, { title: 'Event 2' }],
-    '2025-03-20': [{ title: 'Event 3' }],
+    '2025-03-15': [{ title: '개강총회' }, { title: '개강회식' }],
+    '2025-03-20': [{ title: '자고싶어요길이확인' }],
   });
 
   const handleDateChange = (newDate: Date) => {

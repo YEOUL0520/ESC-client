@@ -63,10 +63,13 @@ body {
 }
 
 .event-label {
-  display: inline-block; /* 이벤트 레이블을 인라인 블록으로 설정 */
-  background-color:white; /* 이벤트 레이블 배경색 */
-  color: #003CC4; /* 이벤트 레이블 텍스트 색상 */
-  padding: 2px 5px; /* 패딩 설정 */
-  border-radius: 3px; /* 모서리 둥글게 */
-  margin-top: 2px; /* 간격 설정 */
-}
+    display: block; /* 블록 요소로 설정하여 가로 길이를 동일하게 */
+    width: 100%; /* 부모 요소의 너비에 맞춤 */
+    background-color: white; /* 이벤트 레이블 배경색 */
+    color: #003CC4; /* 이벤트 레이블 텍스트 색상 */
+    padding: 2px 5px; /* 패딩 설정 */
+    border-radius: 3px; /* 모서리 둥글게 */
+    margin-top: 2px; /* 간격 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
+  
