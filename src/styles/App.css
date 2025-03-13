@@ -28,17 +28,25 @@ body {
   grid-template-columns: repeat(7, 1fr); /* 7열로 설정 */
   grid-template-rows: repeat(5, 1fr); /* 5행으로 설정 */
   gap: 5px; /* 타일 간의 간격 */
-  height: 100px; /* 전체 높이를 설정하여 5행으로 보이게 조정 */
+  height: 100px; /* 전체 높이를 설정 */
 }
 
 .react-calendar__tile {
-  padding: 10px; /* 타일 안의 여백 설정 */
-  text-align: center; /* 중앙 정렬 */
-  border: 1px solid transparent; /* 기본 테두리 제거 */
-  height: 100%; /* 날짜 타일의 높이를 100%로 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  position: relative; /* 이벤트 레이블을 위한 상대 위치 */
-}
+    padding: 10px; /* 타일 안의 여백 설정 */
+    text-align: center; /* 중앙 정렬 */
+    border: 1px solid transparent; /* 기본 테두리 제거 */
+    height: 100%; /* 날짜 타일의 높이를 100%로 설정 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    position: relative; /* 이벤트 레이블을 위한 상대 위치 */
+    display: flex; /* 플렉스 박스 사용 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    justify-content: flex-start; /* 상단 정렬 */
+  }
+  
+  .date-number {
+    margin-top: 5pt; /* 날짜와 이벤트 레이블 간의 간격을 추가하기 위해 설정 */
+  }
+  
 
 .react-calendar__tile--active {
   background-color: #12003E; /* 선택된 날짜 배경색 */
