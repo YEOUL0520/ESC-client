@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif; /* 프리텐다드 폰트 사용 */
+  }
+  
+  .react-calendar {
+  width: 100%;
+  max-width: 1000px; /* 달력의 최대 너비를 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.react-calendar__navigation {
+  margin-bottom: 50px; /* 네비게이션과 달력 간격 */
+}
+
+.react-calendar__navigation button {
+  font-size: 20px; /* 버튼 폰트 크기 */
+  margin: 20px 50px 10px; /* 버튼 간격 */
+}
+
+.react-calendar__month-view {
+  margin: 0; /* 여백 제거 */
+  font-family: 'Pretendard', sans-serif; /* 사용할 폰트 설정 */
+}
+
+.react-calendar__month-view__days {
+  display: grid; /* 그리드 레이아웃 사용 */
+  grid-template-columns: repeat(7, 1fr); /* 7열로 설정 */
+  grid-template-rows: repeat(5, 1fr); /* 5행으로 설정 */
+  gap: 5px; /* 타일 간의 간격 */
+  height: 100px; /* 전체 높이를 설정하여 5행으로 보이게 조정 */
+}
+
+.react-calendar__tile {
+  padding: 10px; /* 타일 안의 여백 설정 */
+  text-align: center; /* 중앙 정렬 */
+  border: 1px solid transparent; /* 기본 테두리 제거 */
+  height: 100%; /* 날짜 타일의 높이를 100%로 설정 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  position: relative; /* 이벤트 레이블을 위한 상대 위치 */
+}
+
+.react-calendar__tile--active {
+  background-color: #12003E; /* 선택된 날짜 배경색 */
+  color: white; /* 선택된 날짜 텍스트 색상 */
+}
+
+.react-calendar__tile--now {
+  color:#003CC4; /* 오늘 날짜 텍스트 색상 */
+}
+
+.react-calendar__tile--hasActive {
+  background-color: #003CC4; /* 이벤트가 있는 날짜 배경색 */
+  color: white; /* 이벤트가 있는 날짜 텍스트 색상 */
+}
+
+.event-label {
+  display: inline-block; /* 이벤트 레이블을 인라인 블록으로 설정 */
+  background-color:white; /* 이벤트 레이블 배경색 */
+  color: #003CC4; /* 이벤트 레이블 텍스트 색상 */
+  padding: 2px 5px; /* 패딩 설정 */
+  border-radius: 3px; /* 모서리 둥글게 */
+  margin-top: 2px; /* 간격 설정 */
+}
